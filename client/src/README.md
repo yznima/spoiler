@@ -1,0 +1,12 @@
+<Provider>
+    <Router>
+        <Route>
+            <App>
+                <Route>
+                    <Header/>
+                </Route>
+                <PublicPage|HomePage/>
+            <App>
+        </Route>
+    <Router>
+</Provider>

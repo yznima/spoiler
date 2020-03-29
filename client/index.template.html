@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <style>
+        /* TODO: Move these to separate css files */
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+        @import url(http://fonts.googleapis.com/css?family=Cookie);
+
+        .login-page {
+            width: 430px;
+            padding: 11% 0 0;
+            margin: auto;
+        }
+
+        .form {
+            position: relative;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 430px;
+            margin: 0 auto 100px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        .form input {
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            padding: 14px;
+            box-sizing: border-box;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 2px;
+            height: 50px;
+        }
+
+        .form-group {
+            margin: 0 0 20px;
+        }
+
+        input:focus::-webkit-input-placeholder {
+            color: transparent;
+        }
+
+        input:focus:-moz-placeholder {
+            color: transparent;
+        }
+
+        /* FF 4-18 */
+        input:focus::-moz-placeholder {
+            color: transparent;
+        }
+
+        /* FF 19+ */
+        input:focus:-ms-input-placeholder {
+            color: transparent;
+        }
+
+        /* IE 10+ */
+
+        .form button {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+
+        .form button:hover, .form button:active, .form button:focus {
+            background: #43A047;
+        }
+
+        .form .message {
+            margin: 15px 0 0;
+            color: #b3b3b3;
+            font-size: 14px;
+        }
+
+        .form .message a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login-form {
+            max-width: 400px !important;
+        }
+
+        .login-error {
+            margin: 0 0 15px;
+            padding: 14px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            border: #cc0000 solid 1px;
+            border-radius: 2px;
+        }
+
+        input.has-error {
+            border: #cc0000 solid 1px;
+        }
+
+        body {
+            height: 100vh;
+            background: #c3cfe2; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f5f7fa, #c3cfe2); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+    <div id="react-container"></div>
+</body>
+</html>

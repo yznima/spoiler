@@ -11,3 +11,5 @@ doc
 
 # IntelliJ
 .idea
+
+dist/**
