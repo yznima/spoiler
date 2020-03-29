@@ -1,0 +1,22 @@
+{
+  "name": "Spoiler-Dev",
+  "database": {
+    "mongodb": {
+      "host": "localhost",
+      "dbName": "spoiler-dev-db",
+      "port": 9000
+      /* Not used currently */
+    }
+  },
+  "api": {},
+  "server": {
+    "http": {
+      "port": 4001
+      /* Not used if passed in as parameter */
+    },
+    "https": {
+      "port": 8443
+    }
+  },
+  "middleware": {}
+}

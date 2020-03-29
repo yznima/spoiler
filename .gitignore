@@ -1,0 +1,13 @@
+# Ignore DS_Store on Mac
+.DS_STORE
+
+# Node Modules
+node_modules
+
+npm-debug.*
+
+# Don't store the documentation files
+doc
+
+# IntelliJ
+.idea

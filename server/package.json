@@ -1,0 +1,57 @@
+{
+  "name": "spoiler",
+  "version": "1.0.0",
+  "description": "The boilerplate NodeJs server",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/apiTest",
+    "start": "NODE_ENV=dev DEBUG=@app  nodemon ./app.js",
+    "startDev": "NODE_ENV=dev DEBUG=@*  nodemon ./app.js",
+    "startProd": "NODE_ENV=prod DEBUG=''  nodemon ./app.js",
+    "startLint": "nodemon ./node_modules/eslint/bin/eslint.js ./*",
+    "apiGen": "./node_modules/apidoc/bin/apidoc -o ./doc -i ./api/"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Nima Yahyazadeh",
+  "license": "MIT",
+  "dependencies": {
+    "argparse": "^1.0.9",
+    "bcrypt": "^1.0.2",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "config": "^1.26.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.1",
+    "debug": "^2.6.6",
+    "deepcopy": "^0.6.3",
+    "express": "^4.15.2",
+    "helmet": "^3.6.0",
+    "joi": "^10.4.1",
+    "mongoose": "^4.9.8",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "passport-remember-me": "0.0.1"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.5",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp-watch": "^4.3.11",
+    "mocha": "^3.4.1",
+    "nodemon": "^1.11.0"
+  },
+  "apidoc": {
+    "title": "Spiler Api",
+    "url": "https://localhost:4000/api"
+  }
+}
