@@ -9,9 +9,9 @@
   "scripts": {
     "test": "NODE_ENV=test mocha test/apiTest",
     "start": "NODE_ENV=dev DEBUG=@app  nodemon ./app.js",
-    "startDev": "NODE_ENV=dev DEBUG=@*  nodemon ./app.js",
-    "startProd": "NODE_ENV=prod DEBUG=''  nodemon ./app.js",
-    "startLint": "nodemon ./node_modules/eslint/bin/eslint.js ./*",
+    "start:dev": "NODE_ENV=dev DEBUG=@*  nodemon ./app.js",
+    "start:prod": "NODE_ENV=prod DEBUG=''  node ./app.js",
+    "start:lint": "nodemon ./node_modules/eslint/bin/eslint.js ./*",
     "apiGen": "./node_modules/apidoc/bin/apidoc -o ./doc -i ./api/"
   },
   "keywords": [
@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "argparse": "^1.0.9",
-    "bcrypt": "^1.0.2",
+    "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "config": "^1.26.1",

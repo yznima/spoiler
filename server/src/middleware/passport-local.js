@@ -1,7 +1,7 @@
 'use strict';
 // eslint-disable-next-line no-unused-vars
 const debug = require('debug')('@middleware:local');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../database').UserSchema.User;
 

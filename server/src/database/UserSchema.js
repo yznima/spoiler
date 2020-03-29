@@ -2,7 +2,7 @@
 const debug = require('debug')('@database:user');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Joi = require('joi');
 
 const BCRYPT_SALT_ROUND = 11;
