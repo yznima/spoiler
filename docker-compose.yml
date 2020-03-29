@@ -1,0 +1,18 @@
+version: '3.0'
+services:
+ spoiler-client:
+  build: client
+  ports:
+  - "4002:80"
+ 
+ spoiler-server:
+  build: server
+  ports:
+  - "4001:4001"
+  links:
+  - spoiler-database
+ 
+ spoiler-database:
+  image: mongo:3.2.9
+  ports:
+  - "27017:27017"
