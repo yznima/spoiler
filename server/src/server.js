@@ -85,6 +85,7 @@ module.exports = () => {
 
     // Don't send error information back to user
     app.use((err, req, res, next) => {
+        debug(err);
         res.status(500).send({
             message: err.message
         }).end();

@@ -2,8 +2,8 @@
   "name": "Spoiler-Prod",
   "database": {
     "mongodb": {
-      "host": "localhost",
-      "dbName": "spoiler-prod-db",
+      "host": "spoiler-database",
+      "dbName": "prod",
       "port": 9000
       /* Not used currently */
     }

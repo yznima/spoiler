@@ -57,7 +57,7 @@ export const
 	FETCH_JSON_HEADER = { 'Content-Type': 'application/json' },
 	FETCH_POST_METHOD = 'POST',
 	FETCH_INCLUDE_CREDENTIALS: RequestCredentials = 'include',
-	FETCH_EMPTY_BODY = {};
+	FETCH_EMPTY_BODY = JSON.stringify({});
 
 // For a reference to AsyncActions in redux see http://redux.js.org/docs/advanced/AsyncActions.html#actionsjs
 /**

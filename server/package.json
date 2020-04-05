@@ -10,7 +10,7 @@
     "test": "NODE_ENV=test mocha test/apiTest",
     "start": "NODE_ENV=dev DEBUG=@app  nodemon ./app.js",
     "start:dev": "NODE_ENV=dev DEBUG=@*  nodemon ./app.js",
-    "start:prod": "NODE_ENV=prod DEBUG=''  node ./app.js",
+    "start:prod": "NODE_ENV=prod DEBUG=@*  node ./app.js",
     "start:lint": "nodemon ./node_modules/eslint/bin/eslint.js ./*",
     "apiGen": "./node_modules/apidoc/bin/apidoc -o ./doc -i ./api/"
   },
