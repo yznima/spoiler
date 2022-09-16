@@ -46,7 +46,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "expect": "^1.20.2",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
